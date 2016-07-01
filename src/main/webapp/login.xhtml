@@ -19,9 +19,9 @@
         <div class="container">
             <h:form class="form-signin">
                <h2 class="form-signin-heading">Login</h2>
-               <p:inputText id="usuario" class="input-block-level" placeholder="Usuario" value="#{loginBean.senha}"></p:inputText>
-               <p:password  id="Senha" class="input-block-level" placeholder="Senha" value="#{loginBean.senha}"></p:password>
-               <button class="btn btn-large btn-primary" type="submit" value="#{loginBean.logar()}">Entrar</button>
+               <p:inputText alt="Usuario" id="usuario" class="input-block-level" placeholder="Usuario" value="#{loginBean.entrar.usuario}"></p:inputText>
+               <p:password alt="Senha"  id="Senha" class="input-block-level" placeholder="Senha" value="#{loginBean.entrar.senha}"></p:password>
+               <p:commandButton alt="Entrar" value="Entrar" class="btn btn-large btn-primary" action="#{loginBean.logar()}" update="@form"></p:commandButton>
             </h:form>
 
     </div> <!-- /container -->
